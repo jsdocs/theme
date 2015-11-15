@@ -1,4 +1,9 @@
 <section id='{{permalink}}' class='pad2 keyline-bottom'>
+  <h2 id='{{permalink}}' class='space'>
+    <span>{{name}}</span>
+    <span class='quiet'>{{{format_params}}}</span>
+  </h2>
+
   {{#if context.github}}
     <div class='fr space'>
       {{#if augments}}
@@ -14,10 +19,6 @@
       </a>
     </div>
   {{/if}}
-  <h2 id='{{permalink}}' class='space'>
-    <span>{{name}}</span>
-    <span class='quiet'>{{{format_params}}}</span>
-  </h2>
 
   <div class='prose space-bottom2'>
     {{{md description}}}
